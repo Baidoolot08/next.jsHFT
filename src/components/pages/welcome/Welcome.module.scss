@@ -1,0 +1,137 @@
+.welcome {
+  color: white;
+  background: #0d031b;
+  .welcome__global {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    .welcome__info {
+      max-width: 550px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h1 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        span {
+          color: #1ee0e1;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #ccc;
+      }
+
+      .btn {
+        position: relative;
+        button {
+          margin-top: 20px;
+          width: auto;
+          padding: 12px 30px;
+          border: none;
+          border-radius: 8px;
+          background: #d011cc59;
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 16px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: #d011cc;
+          }
+        }
+
+        .img3 {
+          position: absolute;
+          top: -50px;
+          margin-left: 40%;
+        }
+      }
+      .nico {
+        padding: 100px 0px 0px 0px;
+        .icon {
+          display: flex;
+          align-items: flex-start;
+          position: relative;
+          .img {
+            position: absolute;
+            top: -7;
+            left: 0px;
+          }
+          h2 {
+            font-size: 25px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+          }
+        }
+        .block {
+          display: flex;
+          align-items: flex-start;
+          gap: 30px;
+
+          font-size: 22px;
+          .blocks {
+            p {
+              font-size: 20px;
+              color: rgba(207, 192, 192, 0.893);
+            }
+            h3 {
+              color: white;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+    }
+
+    .welcome__img {
+      .img1 {
+        width: 90%;
+        margin-left: 20%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .welcome {
+    padding: 40px 0;
+
+    .welcome__global {
+      flex-direction: column;
+      text-align: center;
+
+      .welcome__info {
+        max-width: 100%;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .img {
+        margin: 20px auto 0;
+      }
+
+      .welcome__img {
+        .img1 {
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

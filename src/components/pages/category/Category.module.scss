@@ -1,0 +1,39 @@
+.Category {
+  padding: 20px 0;
+  background: #0d031b;
+}
+.category {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  h1 {
+    color: aliceblue;
+    span {
+      color: #1ee0e1;
+    }
+  }
+  p {
+    color: rgb(181, 173, 173);
+    font-weight: 600;
+  }
+  button {
+    padding: 13px 30px;
+    background: rgb(10, 24, 56);
+    border-radius: 6px;
+    color: white;
+    border: 2px solid rgb(147, 26, 171);
+  }
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
