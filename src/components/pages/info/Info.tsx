@@ -16,7 +16,7 @@ const Info = () => {
           </div>
           <div className={styles.infoSubtitle}>
             <h2>
-              How to <i>Create & Sell</i> Your NFT Files.
+              How to <i>Create &amp; Sell</i> Your NFT Files.
             </h2>
           </div>
           <div className={styles.infoBlock}>
@@ -26,13 +26,13 @@ const Info = () => {
                 <h1>Set Up Your Wallet</h1>
                 <p>
                   Connect your wallet to Nico by clicking the wallet icon in the
-                  top right corner after you've set it up.
+                  top right corner after you&apos;ve set it up.
                 </p>
               </div>
             </div>
 
             <div className={styles.infoBlockItem}>
-              <Image src={addNew} alt="coin" />
+              <Image src={addNew} alt="add new" />
               <div className={styles.infoBlocktext}>
                 <h1>Create Unique Collection</h1>
                 <p>
@@ -43,7 +43,7 @@ const Info = () => {
             </div>
 
             <div className={styles.infoBlockItem}>
-              <Image src={nft} alt="coin" />
+              <Image src={nft} alt="nft" />
               <div className={styles.infoBlocktext}>
                 <h1>Download NFTs</h1>
                 <p>
@@ -54,12 +54,13 @@ const Info = () => {
             </div>
 
             <div className={styles.infoBlockItem}>
-              <Image src={sell} alt="coin" />
+              <Image src={sell} alt="sell" />
               <div className={styles.infoBlocktext}>
                 <h1>Put Them Up for Sale</h1>
                 <p>
                   Auctions, fixed-price listings, and declining-price listings
-                  are all options. You decide how you'd like to sell your NFTs.
+                  are all options. You decide how you&apos;d like to sell your
+                  NFTs.
                 </p>
               </div>
             </div>

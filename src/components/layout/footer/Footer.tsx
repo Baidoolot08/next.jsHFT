@@ -5,6 +5,7 @@ import footertop from "@/assets/image/footertop.svg";
 import Image from "next/image";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -31,18 +32,18 @@ const Footer = () => {
 
           <div className={scss.footer_bottom}>
             <div className={scss.footer_icon}>
-              <a href="https://www.facebook.com/">
+              <Link href="#">
                 <FaFacebookF />
-              </a>
-              <a href="https://fontawesome.com/icons/linkedin-in?f=brands&s=solid">
+              </Link>
+              <Link href="#">
                 <FaLinkedinIn />
-              </a>
-              <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoic3IifQ%3D%3D%22%7D">
+              </Link>
+              <Link href="#">
                 <CiTwitter />
-              </a>
-              <a href="https://www.youtube.com/shorts/6PEPmPX7Vl4">
+              </Link>
+              <Link href="#">
                 <FaYoutube />
-              </a>
+              </Link>
             </div>
           </div>
           <div className={scss.div}></div>

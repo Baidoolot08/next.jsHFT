@@ -4,7 +4,7 @@ import { ProductItem } from "../ui/product";
 
 export const fetchNfts = createAsyncThunk<ProductItem[]>(
   "nfts/fetchNfts",
-  async () => {
+  async (): Promise<ProductItem[]> => {
     const res = await axios.get(
       "https://api-crud.elcho.dev/api/v1/9d5ef-9f8fd-517e7/Book"
     );
@@ -15,14 +15,16 @@ export const fetchNfts = createAsyncThunk<ProductItem[]>(
       .filter((key) => !isNaN(Number(key)))
       .map((key) => raw[key]);
 
-    return products.map((item: any) => ({
-      id: item.id,
-      image: item.image ?? "/placeholder.png",
-      title: item.title ?? item.name ?? "No title",
-      category: item.category ?? "Uncategorized",
-      rating: item.rating ?? 0,
-      price: item.price ?? 0,
-    }));
+    return products.map(
+      (item): ProductItem => ({
+        id: item.id,
+        image: item.image ?? "/placeholder.png",
+        title: item.title ?? item.name ?? "No title",
+        category: item.category ?? "Uncategorized",
+        rating: item.rating ?? 0,
+        price: item.price ?? 0,
+      })
+    );
   }
 );
 
