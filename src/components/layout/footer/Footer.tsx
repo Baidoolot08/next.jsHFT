@@ -52,11 +52,11 @@ const Footer = () => {
               <h4>Copyright © 2022 Nazmul Shanto. All Rights Reserved</h4>
             </div>
             <div className={scss.footer__right}>
-              <a href="/">Home</a>
-              <a href="#popular">All NFTs</a>
-              <a href="#info">Team</a>
-              <a href="#market">Terms & Co.</a>
-              <a href="#contact">Contact</a>
+              <Link href="/">Home</Link>
+              <Link href="#popular">All NFTs</Link>
+              <Link href="#info">Team</Link>
+              <Link href="#market">Terms & Co.</Link>
+              <Link href="#contact">Contact</Link>
             </div>
           </div>
         </div>
